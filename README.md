@@ -164,3 +164,4 @@ its functionality! You should change it so that it handles these two cases:
 - If called on a `Dog` instance that _does_ have an ID assigned, use the
   `#update` method to update the existing dog in the database, and return the
   updated `Dog` instance.
+# Phase3BringItAllTogether
