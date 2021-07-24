@@ -43,5 +43,9 @@ class Dog
         self.new(id: row[0],name: row[1],breed: row[2])
     end
 
+    def self.all
+        DB[:conn].execute("select * from dogs").map {|row| self.new_from_db(row)}
+    end
+
 
 end
